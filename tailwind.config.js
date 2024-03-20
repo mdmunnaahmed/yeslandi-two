@@ -9,17 +9,22 @@ module.exports = {
       xl: "1200px",
       xxl: "1400px",
     },
+    container: {
+      center: true,
+      padding: "1rem",
+    },
     fontFamily: {
-      workSans: ['"Work Sans", sans-serif;'],
+      heading: ['"Exo", sans-serif;'],
+      body: ['"Public Sans", sans-serif'],
     },
     fontSize: {
       sm: "0.875rem",
       base: "1rem",
-      xl: "1.125rem",
-      "2xl": "1.25rem",
-      "3xl": "1.5rem",
-      "4xl": "3rem",
-      "5xl": "4rem",
+      lg: "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "3rem",
+      "4xl": "4rem",
     },
     boxShadow: {
       small: "0px 4px 30px rgba(1, 19, 60, 0.08);",

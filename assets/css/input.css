@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-body font-normal text-base font-body leading-[1.75];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-title font-semibold font-heading;
+  }
+  h1 {
+    @apply leading-[1.17] xl:text-4xl lg:text-3xl sm:text-[36px] text-[30px] font-bold;
+  }
+  h2 {
+    @apply leading-[1.2] xl:text-3xl text-[28px] lg:text-[36px] font-bold;
+  }
+  h3 {
+    @apply lg:text-2xl text-xl;
+  }
+  h3,
+  h4,
+  h5,
+  h5 {
+    @apply leading-[1.4];
+  }
+  a {
+    @apply hover:text-primary transition duration-300 ease-linear;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative z-[2] overflow-hidden inline-block border-none text-center font-body text-sm font-bold leading-none py-[20.5px] px-[29px] rounded-none text-white bg-primary uppercase transition duration-300 ease-linear;
+  }
+  .btn-primary:hover {
+    @apply text-title;
+  }
+  .btn-primary::before,
+  .btn-primary::after {
+    @apply absolute h-full w-2/3 bg-black top-0 -z-10;
+    content: "";
+  }
+  .btn-primary::before {
+    @apply -translate-x-full -left-1 transition duration-300 ease-linear rounded-2xl;
+  }
+  .btn-primary::after {
+    @apply translate-x-full -right-1 transition duration-300 ease-linear rounded-2xl;
+  }
+  .btn-primary:hover::before {
+    @apply -translate-x-1 rounded-none bg-white;
+  }
+  .btn-primary:hover::after {
+    @apply translate-x-1 rounded-none bg-white;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply xxl:max-w-[1270px];
+  }
+}
