@@ -18,7 +18,7 @@
     @apply leading-[1.17] xl:text-4xl lg:text-3xl sm:text-[36px] text-[30px] font-bold;
   }
   h2 {
-    @apply leading-[1.2] xl:text-3xl text-[28px] lg:text-[36px] font-bold;
+    @apply leading-[1.2] xl:text-3xl text-[28px] md:text-[36px] font-bold;
   }
   h3 {
     @apply lg:text-2xl text-xl;
