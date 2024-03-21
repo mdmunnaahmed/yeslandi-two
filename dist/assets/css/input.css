@@ -86,7 +86,6 @@
   }
   .responsive-header.active {
     @apply translate-x-0 opacity-100;
-    isolation: isolate
   }
   .overlay.active {
     @apply opacity-100 visible;
