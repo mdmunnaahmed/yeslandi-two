@@ -326,3 +326,23 @@
     display: none !important;
   }
 }
+.project-slider .slick-list {
+  overflow-x: hidden;
+  padding-bottom: 25px;
+  margin-right: -400px;
+}
+.project-slider .slick-arrow {
+  top: -90px;
+  right: 35px;
+  left: auto;
+}
+@media (max-width:575px) {
+  .project-slider .slick-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+.project-slider .slick-arrow.arrow-left {
+  transform: translate(-70%, -50%);
+}

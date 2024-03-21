@@ -39,6 +39,12 @@
   .footer-widget-title::after {
     @apply absolute content-[''] animate-footerLine w-4 h-[2px] border-l-4 border-r-4 border-title bg-transparent bottom-0 left-10;
   }
+  .play-btn::before, .play-btn::after {
+    @apply animate-ripple bg-primary absolute content-[''] left-0 top-0 bottom-0 right-0 -z-[1] rounded-full;
+  }
+  /* .play-btn::after {
+    @apply delay-200;
+  } */
 }
 
 @layer components {

@@ -50,10 +50,26 @@ module.exports = {
             left: "40px",
           },
         },
+        ripple: {
+          "0%": {
+            "-webkit-transform": "scale(1)",
+            transform: "scale(1)",
+            opacity: 0,
+          },
+          "30%": {
+            opacity: 0.4,
+          },
+          "100%": {
+            "-webkit-transform": "scale(1.5)",
+            transform: "scale(1.5)",
+            opacity: 0,
+          },
+        },
       },
       animation: {
-        footerLine: 'footerLine 7s linear infinite'
-      }
+        footerLine: "footerLine 7s linear infinite",
+        ripple: "ripple 2s linear infinite",
+      },
     },
   },
   plugins: [],

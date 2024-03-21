@@ -39,18 +39,32 @@ $(".team-slider").slick({
 		},
 	],
 });
+$(".project-slider").slick({
+	fade: false,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	infinite: true,
+	autoplay: true,
+	pauseOnHover: true,
+	centerMode: false,
+	dots: false,
+	arrows: true,
+	nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+	prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+	responsive: [
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 3,
+			},
+		},
+	],
+});
 
 
-var videoItem = $(".video-pop");
+var videoItem = $(".play-btn");
 if (videoItem) {
   videoItem.magnificPopup({
     type: "iframe",
-  });
-}
-
-var imageItem = $(".image-pop");
-if (imageItem) {
-  imageItem.magnificPopup({
-    type: "image",
   });
 }
