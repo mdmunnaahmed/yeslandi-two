@@ -25,6 +25,35 @@
 
 <body>
 
+    <header class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="logo.svg" alt="Logo" class="h-8">
+                <span class="ml-2 font-bold">Konta</span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-gray-400">About</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+
 
     <main id="main-wrapper">
         <!-- hero section start -->
@@ -42,7 +71,9 @@
                             <a href="" class="btn-primary">Our Services</a>
                         </div>
                     </div>
-                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="hidden lg:flex play-btn hover:text-white relative z-[2] text-[28px] h-20 w-20 items-center justify-center bg-primary rounded-full text-white"><i class="las la-play"></i></a>
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                        class="hidden lg:flex play-btn hover:text-white relative z-[2] text-[28px] h-20 w-20 items-center justify-center bg-primary rounded-full text-white before:animate-ripple before:bg-primary before:absolute before:content-[''] before:left-0 before:top-0 before:bottom-0 before:right-0 before:-z-[1] before:rounded-full"><i
+                            class="las la-play"></i></a>
                 </div>
             </div>
         </section>
@@ -136,8 +167,8 @@
                     </p>
                     <h2 class="mt-3 mb-4">The Best Service For You</h2>
                 </div>
-                <div class="grid lg:grid-cols-3 md:grid-cols-2">
-                    <div class="flex gap-6 group">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 service-grid">
+                    <div class="flex gap-6 group service-grid-item">
                         <img src="./assets/images/service_4_1.svg" alt="service icon" class="w-[60px] h-[60px] object-contain group-hover:-scale-x-100 transition duration-300 ease-linear">
                         <div>
                             <h3 class="mb-2"><a href="">Building Construction</a></h3>
@@ -147,7 +178,7 @@
                                         class="w-5 transition duration-300 ease-linear group-hover:brightness-[500]"></span> read more</a>
                         </div>
                     </div>
-                    <div class="flex gap-6 group">
+                    <div class="flex gap-6 group service-grid-item">
                         <img src="./assets/images/service_4_2.svg" alt="service icon" class="w-[60px] h-[60px] object-contain group-hover:-scale-x-100 transition duration-300 ease-linear">
                         <div>
                             <h3 class="mb-2"><a href="">Building Construction</a></h3>
@@ -157,7 +188,7 @@
                                         class="w-5 transition duration-300 ease-linear group-hover:brightness-[500]"></span> read more</a>
                         </div>
                     </div>
-                    <div class="flex gap-6 group">
+                    <div class="flex gap-6 group service-grid-item">
                         <img src="./assets/images/service_4_3.svg" alt="service icon" class="w-[60px] h-[60px] object-contain group-hover:-scale-x-100 transition duration-300 ease-linear">
                         <div>
                             <h3 class="mb-2"><a href="">Building Construction</a></h3>
@@ -167,7 +198,7 @@
                                         class="w-5 transition duration-300 ease-linear group-hover:brightness-[500]"></span> read more</a>
                         </div>
                     </div>
-                    <div class="flex gap-6 group">
+                    <div class="flex gap-6 group service-grid-item">
                         <img src="./assets/images/service_4_4.svg" alt="service icon" class="w-[60px] h-[60px] object-contain group-hover:-scale-x-100 transition duration-300 ease-linear">
                         <div>
                             <h3 class="mb-2"><a href="">Building Construction</a></h3>
@@ -177,7 +208,7 @@
                                         class="w-5 transition duration-300 ease-linear group-hover:brightness-[500]"></span> read more</a>
                         </div>
                     </div>
-                    <div class="flex gap-6 group">
+                    <div class="flex gap-6 group service-grid-item">
                         <img src="./assets/images/service_4_5.svg" alt="service icon" class="w-[60px] h-[60px] object-contain group-hover:-scale-x-100 transition duration-300 ease-linear">
                         <div>
                             <h3 class="mb-2"><a href="">Building Construction</a></h3>
@@ -187,7 +218,7 @@
                                         class="w-5 transition duration-300 ease-linear group-hover:brightness-[500]"></span> read more</a>
                         </div>
                     </div>
-                    <div class="flex gap-6 group">
+                    <div class="flex gap-6 group service-grid-item">
                         <img src="./assets/images/service_4_6.svg" alt="service icon" class="w-[60px] h-[60px] object-contain group-hover:-scale-x-100 transition duration-300 ease-linear">
                         <div>
                             <h3 class="mb-2"><a href="">Building Construction</a></h3>
@@ -374,7 +405,7 @@
                 <div class="mb-10 lg:mb-12 slick-initialized slick-slider">
                     <p class="font-heading font-semibold uppercase text-primary flex items-center gap-[6px]">
                         CONSTRUCT PROJECTS
-                        
+
                         <span class="relative w-10 h-[3px] bg-primary rounded-md inline-flex">
                             <span class="inline-block h-[3px] w-[3px] bg-primary absolute -right-[6px] top-0 rounded-md"></span>
                             <span class="inline-block h-[3px] w-[3px] bg-primary absolute -right-[12px] top-0 rounded-md"></span>
@@ -382,7 +413,7 @@
                         </span>
                     </p>
                     <h2 class="mt-3 mb-4 text-white">Our Recent Projects</h2>
-                  
+
                 </div>
             </div>
             <div class="container relative z-[2] pr-0">
@@ -401,11 +432,11 @@
                     </div>
                     <div class="single-slide">
                         <div class="overflow-hidden rounded-lg shadow-base">
-                            <img src="./assets/images/project_4_1.jpg" alt="project gallery" class="w-full">
+                            <img src="./assets/images/project_4_2.jpg" alt="project gallery" class="w-full">
                             <div class="flex p-6 justify-between">
                                 <div class="">
                                     <p class="uppercase text-primary">construction</p>
-                                    <h3 class="font-bold">Interior Decoration</h3>
+                                    <h3 class="font-bold">Construction Planning</h3>
                                 </div>
                                 <a href="" class="h-12 w-12 bg-primary rounded-md flex items-center justify-center text-xl text-white shadow-primary/10 hover:text-white hover:bg-title"><i class="las la-plus"></i></a>
                             </div>
@@ -413,11 +444,11 @@
                     </div>
                     <div class="single-slide">
                         <div class="overflow-hidden rounded-lg shadow-base">
-                            <img src="./assets/images/project_4_1.jpg" alt="project gallery" class="w-full">
+                            <img src="./assets/images/project_4_3.jpg" alt="project gallery" class="w-full">
                             <div class="flex p-6 justify-between">
                                 <div class="">
                                     <p class="uppercase text-primary">construction</p>
-                                    <h3 class="font-bold">Interior Decoration</h3>
+                                    <h3 class="font-bold">Rowson Construction</h3>
                                 </div>
                                 <a href="" class="h-12 w-12 bg-primary rounded-md flex items-center justify-center text-xl text-white shadow-primary/10 hover:text-white hover:bg-title"><i class="las la-plus"></i></a>
                             </div>
@@ -425,11 +456,11 @@
                     </div>
                     <div class="single-slide">
                         <div class="overflow-hidden rounded-lg shadow-base">
-                            <img src="./assets/images/project_4_1.jpg" alt="project gallery" class="w-full">
+                            <img src="./assets/images/project_4_4.jpg" alt="project gallery" class="w-full">
                             <div class="flex p-6 justify-between">
                                 <div class="">
                                     <p class="uppercase text-primary">construction</p>
-                                    <h3 class="font-bold">Interior Decoration</h3>
+                                    <h3 class="font-bold">Bridge Trangle Core</h3>
                                 </div>
                                 <a href="" class="h-12 w-12 bg-primary rounded-md flex items-center justify-center text-xl text-white shadow-primary/10 hover:text-white hover:bg-title"><i class="las la-plus"></i></a>
                             </div>
@@ -437,11 +468,11 @@
                     </div>
                     <div class="single-slide">
                         <div class="overflow-hidden rounded-lg shadow-base">
-                            <img src="./assets/images/project_4_1.jpg" alt="project gallery" class="w-full">
+                            <img src="./assets/images/project_4_5.jpg" alt="project gallery" class="w-full">
                             <div class="flex p-6 justify-between">
                                 <div class="">
                                     <p class="uppercase text-primary">construction</p>
-                                    <h3 class="font-bold">Interior Decoration</h3>
+                                    <h3 class="font-bold">Contemporary Villa</h3>
                                 </div>
                                 <a href="" class="h-12 w-12 bg-primary rounded-md flex items-center justify-center text-xl text-white shadow-primary/10 hover:text-white hover:bg-title"><i class="las la-plus"></i></a>
                             </div>
@@ -452,7 +483,7 @@
         </section>
         <!-- recent projects section end -->
 
-        <!-- ACHIVEMENTS section start -->
+        <!-- ACHIEVEMENTS section start -->
         <section class="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] relative">
             <img src="./assets/images/achive_bg_1.jpg" alt="overlay" class="absolute left-0 right-0 bottom-0 top-0 w-full z-[1] h-full object-cover ">
             <div class="container relative z-[2]">
@@ -512,104 +543,107 @@
                 </div>
             </div>
         </section>
-        <!-- ACHIVEMENTS section end -->
-
-        <!-- footer section start -->
-        <footer class="bg-title">
-            <div class="container">
-                <div class="flex lg:min-h-[210px] items-center">
-                    <a href="" class="max-w-[266px] w-full"><img src="./assets/images/logo-white.svg" alt="logo white"></a>
-                    <span class="w-[1px] lg:h-[210px] bg-[#FFFFFF1F] mx-6"></span>
-                    <div class="flex flex-wrap flex-grow">
-                        <div class="flex-grow">
-                            <p class="font-semibold text-white/60 mb-2">READY FOR A SUBSCRIPTION?</p>
-                            <h2 class="lg:text-[30px] text-2xl text-white">Subcribe Our Latest News</h2>
-                        </div>
-                        <div class="flex-grow">
-                            <form action="">
-                                <div class="flex gap-2">
-                                    <input type="text" class="bg-white rounded-md outline-none p-3 h-14 w-full" placeholder="Enter Email Address">
-                                    <button class="btn-primary flex-shrink-0" type="submit">SUBSCRIBE <i class="las la-arrow-right"></i></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="border-b border-[#FFFFFF1F]"></div>
-            <div class="container py-16 sm:py-20 xl:py-28">
-                <div class="flex flex-wrap xl:flex-nowrap lg:justify-between gap-y-12 gap-x-6 lg:gap-x-0">
-                    <div class="flex-grow min-w-[200px] md:max-w-[50%] lg:max-w-[300px]">
-                        <h3 class="text-white mb-4 sm:mb-5 lg:mb-6 footer-widget-title relative pb-2">ABOUT COMPANY</h3>
-                        <p class="text-[#B2B2B2]">Quickly supply alternative strategic theme areas vis-a-vis B2C mindshare. Objectively repurpose stand-alone synergy via user-centric architectures.</p>
-                        <ul class="flex flex-wrap gap-2 mt-4 sm:mt-5 lg:mt-6">
-                            <li><a href="" class="w-10 h-10 flex items-center justify-center text-xl bg-[#3D4250] text-white hover:text-white hover:bg-primary"><i class="lab la-facebook-f"></i></a></li>
-                            <li><a href="" class="w-10 h-10 flex items-center justify-center text-xl bg-[#3D4250] text-white hover:text-white hover:bg-primary"><i class="lab la-twitter"></i></a></li>
-                            <li><a href="" class="w-10 h-10 flex items-center justify-center text-xl bg-[#3D4250] text-white hover:text-white hover:bg-primary"><i class="lab la-linkedin-in"></i></a></li>
-                            <li><a href="" class="w-10 h-10 flex items-center justify-center text-xl bg-[#3D4250] text-white hover:text-white hover:bg-primary"><i class="lab la-whatsapp"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="flex-grow min-w-[180px] md:max-w-[50%] lg:max-w-[180px]">
-                        <h3 class="text-white mb-4 sm:mb-5 lg:mb-6 footer-widget-title relative pb-2">QUICK LINKS</h3>
-                        <ul class="flex flex-col gap-2">
-                            <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> View All Service</a></li>
-                            <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> Pricing</a></li>
-                            <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> View All Projects</a></li>
-                            <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> ViewTeam Members</a></li>
-                            <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> Gallery</a></li>
-                        </ul>
-                    </div>
-                    <div class="flex-grow min-w-[200px] md:max-w-[50%] lg:max-w-[250px]">
-                        <h3 class="text-white mb-4 sm:mb-5 lg:mb-6 footer-widget-title relative pb-2">CONTACT NOW</h3>
-                        <ul class="flex flex-col gap-4 sm:gap-5 lg:gap-6">
-                            <li class="flex gap-3">
-                                <div class="flex-shrink-0 w-[26px] h-[26px] flex items-center justify-center bg-primary text-white"><i class="las la-envelope"></i></div>
-                                <p class="text-[#B2B2B2]">147/I, Green Road, Gulshan Avenue, Panthapath, Dhaka</p>
-                            </li>
-                            <li class="flex gap-3">
-                                <div class="flex-shrink-0 w-[26px] h-[26px] flex items-center justify-center bg-primary text-white"><i class="las la-envelope"></i></div>
-                                <a class="text-[#B2B2B2]" href="mailto:info.example@konta.com">info.example@konta.com</a>
-                            </li>
-                            <li class="flex gap-3">
-                                <div class="flex-shrink-0 w-[26px] h-[26px] flex items-center justify-center bg-primary text-white"><i class="las la-phone"></i></div>
-                                <a class="text-[#B2B2B2]" href="tel:+256 214 203 215">+256 214 203 215</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex-grow min-w-[200px] md:max-w-[50%] lg:max-w-[320px]">
-                        <h3 class="text-white mb-4 sm:mb-5 lg:mb-6 footer-widget-title relative pb-2">GALLERY POSTS</h3>
-                        <ul class="grid grid-cols-3 gap-3 sm:gap-4">
-                            <li><img class="rounded-md w-full" src="./assets/images/gal-1-1.jpg" alt="gallery image"></li>
-                            <li><img class="rounded-md w-full" src="./assets/images/gal-1-2.jpg" alt="gallery image"></li>
-                            <li><img class="rounded-md w-full" src="./assets/images/gal-1-3.jpg" alt="gallery image"></li>
-                            <li><img class="rounded-md w-full" src="./assets/images/gal-1-4.jpg" alt="gallery image"></li>
-                            <li><img class="rounded-md w-full" src="./assets/images/gal-1-5.jpg" alt="gallery image"></li>
-                            <li><img class="rounded-md w-full" src="./assets/images/gal-1-6.jpg" alt="gallery image"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="border-b border-[#FFFFFF1F]"></div>
-            <div class="container">
-                <div class="flex justify-between flex-wrap gap-3 py-4 md:py-5 lg:py-6">
-                    <p class="text-white">Copyright 2024 <a href="" class="text-primary">Themeholy</a>. All Rights Reserved.</p>
-                    <ul class="flex flex-wrap gap-3">
-                        <li><a href="" class="text-white">Privacy Policy</a></li>
-                        <li class="bg-white/60 w-[1px]"></li>
-                        <li><a href="" class="text-white"> Terms of Use</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-        <!-- footer section end -->
-
-
-
-
-
+        <!-- ACHIEVEMENTS section end -->
 
     </main>
 
+    <!-- footer section start -->
+    <footer class="bg-title">
+        <div class="container">
+            <div class="flex lg:min-h-[210px] items-center">
+                <a href="" class="max-w-[266px] w-full"><img src="./assets/images/logo-white.svg" alt="logo white"></a>
+                <span class="w-[1px] lg:h-[210px] bg-[#FFFFFF1F] mx-6"></span>
+                <div class="flex flex-wrap flex-grow">
+                    <div class="flex-grow">
+                        <p class="font-semibold text-white/60 mb-2">READY FOR A SUBSCRIPTION?</p>
+                        <h2 class="lg:text-[30px] text-2xl text-white">Subcribe Our Latest News</h2>
+                    </div>
+                    <div class="flex-grow">
+                        <form action="">
+                            <div class="flex gap-2">
+                                <input type="text" class="bg-white rounded-md outline-none p-3 h-14 w-full" placeholder="Enter Email Address">
+                                <button class="btn-primary flex-shrink-0" type="submit">SUBSCRIBE <i class="las la-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-b border-[#FFFFFF1F]"></div>
+        <div class="container py-16 sm:py-20 xl:py-28">
+            <div class="flex flex-wrap xl:flex-nowrap lg:justify-between gap-y-12 gap-x-6 lg:gap-x-0">
+                <div class="flex-grow min-w-[200px] md:max-w-[50%] lg:max-w-[300px]">
+                    <h3
+                        class="text-white mb-4 sm:mb-5 lg:mb-6 footer-widget-title relative pb-2 before:absolute before:content-[''] before:left-0 before:bottom-0 before:w-[60px] before:h-[2px] before:bg-primary after:absolute after:content-[''] after:animate-footerLine after:w-4 after:h-[2px] after:border-l-4 after:border-r-4 after:border-title after:bg-transparent after:bottom-0 after:left-10">
+                        ABOUT COMPANY</h3>
+                    <p class="text-[#B2B2B2]">Quickly supply alternative strategic theme areas vis-a-vis B2C mindshare. Objectively repurpose stand-alone synergy via user-centric architectures.</p>
+                    <ul class="flex flex-wrap gap-2 mt-4 sm:mt-5 lg:mt-6">
+                        <li><a href="" class="w-10 h-10 flex items-center justify-center text-xl bg-[#3D4250] text-white hover:text-white hover:bg-primary"><i class="lab la-facebook-f"></i></a></li>
+                        <li><a href="" class="w-10 h-10 flex items-center justify-center text-xl bg-[#3D4250] text-white hover:text-white hover:bg-primary"><i class="lab la-twitter"></i></a></li>
+                        <li><a href="" class="w-10 h-10 flex items-center justify-center text-xl bg-[#3D4250] text-white hover:text-white hover:bg-primary"><i class="lab la-linkedin-in"></i></a></li>
+                        <li><a href="" class="w-10 h-10 flex items-center justify-center text-xl bg-[#3D4250] text-white hover:text-white hover:bg-primary"><i class="lab la-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow min-w-[180px] md:max-w-[50%] lg:max-w-[180px]">
+                    <h3
+                        class="text-white mb-4 sm:mb-5 lg:mb-6 footer-widget-title relative pb-2 before:absolute before:content-[''] before:left-0 before:bottom-0 before:w-[60px] before:h-[2px] before:bg-primary after:absolute after:content-[''] after:animate-footerLine after:w-4 after:h-[2px] after:border-l-4 after:border-r-4 after:border-title after:bg-transparent after:bottom-0 after:left-10">
+                        QUICK LINKS</h3>
+                    <ul class="flex flex-col gap-2">
+                        <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> View All Service</a></li>
+                        <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> Pricing</a></li>
+                        <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> View All Projects</a></li>
+                        <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> ViewTeam Members</a></li>
+                        <li><a class="py-2 group text-[#B2B2B2]" href=""><i class="group-hover:translate-x-1 pe-2 transition duration-300 ease-linear las la-arrow-right"></i> Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow min-w-[200px] md:max-w-[50%] lg:max-w-[250px]">
+                    <h3
+                        class="text-white mb-4 sm:mb-5 lg:mb-6 footer-widget-title relative pb-2 before:absolute before:content-[''] before:left-0 before:bottom-0 before:w-[60px] before:h-[2px] before:bg-primary after:absolute after:content-[''] after:animate-footerLine after:w-4 after:h-[2px] after:border-l-4 after:border-r-4 after:border-title after:bg-transparent after:bottom-0 after:left-10">
+                        CONTACT NOW</h3>
+                    <ul class="flex flex-col gap-4 sm:gap-5 lg:gap-6">
+                        <li class="flex gap-3">
+                            <div class="flex-shrink-0 w-[26px] h-[26px] flex items-center justify-center bg-primary text-white"><i class="las la-envelope"></i></div>
+                            <p class="text-[#B2B2B2]">147/I, Green Road, Gulshan Avenue, Panthapath, Dhaka</p>
+                        </li>
+                        <li class="flex gap-3">
+                            <div class="flex-shrink-0 w-[26px] h-[26px] flex items-center justify-center bg-primary text-white"><i class="las la-envelope"></i></div>
+                            <a class="text-[#B2B2B2]" href="mailto:info.example@konta.com">info.example@konta.com</a>
+                        </li>
+                        <li class="flex gap-3">
+                            <div class="flex-shrink-0 w-[26px] h-[26px] flex items-center justify-center bg-primary text-white"><i class="las la-phone"></i></div>
+                            <a class="text-[#B2B2B2]" href="tel:+256 214 203 215">+256 214 203 215</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-grow min-w-[200px] md:max-w-[50%] lg:max-w-[320px]">
+                    <h3
+                        class="text-white mb-4 sm:mb-5 lg:mb-6 footer-widget-title relative pb-2 before:absolute before:content-[''] before:left-0 before:bottom-0 before:w-[60px] before:h-[2px] before:bg-primary after:absolute after:content-[''] after:animate-footerLine after:w-4 after:h-[2px] after:border-l-4 after:border-r-4 after:border-title after:bg-transparent after:bottom-0 after:left-10">
+                        GALLERY POSTS</h3>
+                    <ul class="grid grid-cols-3 gap-3 sm:gap-4">
+                        <li><img class="rounded-md w-full" src="./assets/images/gal-1-1.jpg" alt="gallery image"></li>
+                        <li><img class="rounded-md w-full" src="./assets/images/gal-1-2.jpg" alt="gallery image"></li>
+                        <li><img class="rounded-md w-full" src="./assets/images/gal-1-3.jpg" alt="gallery image"></li>
+                        <li><img class="rounded-md w-full" src="./assets/images/gal-1-4.jpg" alt="gallery image"></li>
+                        <li><img class="rounded-md w-full" src="./assets/images/gal-1-5.jpg" alt="gallery image"></li>
+                        <li><img class="rounded-md w-full" src="./assets/images/gal-1-6.jpg" alt="gallery image"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-b border-[#FFFFFF1F]"></div>
+        <div class="container">
+            <div class="flex justify-between flex-wrap gap-3 py-4 md:py-5 lg:py-6">
+                <p class="text-white">Copyright 2024 <a href="" class="text-primary">Themeholy</a>. All Rights Reserved.</p>
+                <ul class="flex flex-wrap gap-3">
+                    <li><a href="" class="text-white">Privacy Policy</a></li>
+                    <li class="bg-white/60 w-[1px]"></li>
+                    <li><a href="" class="text-white"> Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    
 
     <!-- main js -->
     <script src="./assets/js/jquery-3.6.0.min.js"></script>

@@ -37,6 +37,7 @@ module.exports = {
         primary: "#FF5E14",
         title: "#0E121D",
         body: "#4D5765",
+        border: "#E4E4E4",
       },
       keyframes: {
         footerLine: {
