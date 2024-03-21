@@ -25,27 +25,35 @@
 
 <body>
 
-    <header class="bg-gray-900 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex items-center">
-                <img src="logo.svg" alt="Logo" class="h-8">
-                <span class="ml-2 font-bold">Konta</span>
+    <header class="bg-primary py-4">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="./assets/images/logo-black.svg" alt="Logo" class="max-w-[170px] select-none">
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 uppercase">
+                        <li><a href="#" class="text-white hover:text-white font-semibold">Home</a></li>
+                        <li><a href="#" class="text-white hover:text-white font-semibold">About</a></li>
+                        <li><a href="#" class="text-white hover:text-white font-semibold">Services</a></li>
+                        <li><a href="#" class="text-white hover:text-white font-semibold">Team</a></li>
+                        <li><a href="#" class="text-white hover:text-white font-semibold">Project</a></li>
+                        <li><a href="#" class="text-white hover:text-white font-semibold">Blog</a></li>
+                        <li><a href="#" class="text-white hover:text-white font-semibold">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="flex gap-3 items-center">
+                    <button class="w-[45px] h-[45px] flex items-center justify-center text-xl text-white border border-white rounded-full hover:bg-white hover:text-primary transition duration-300 ease-linear"><i class="las la-search -scale-x-100"></i></button>
+                    <a href="" class="btn-primary">get a quote</a>
+                </div>
             </div>
 
-            <!-- Navigation -->
-            <nav class="hidden md:block">
-                <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:text-gray-400">Home</a></li>
-                    <li><a href="#" class="hover:text-gray-400">Services</a></li>
-                    <li><a href="#" class="hover:text-gray-400">Portfolio</a></li>
-                    <li><a href="#" class="hover:text-gray-400">About</a></li>
-                    <li><a href="#" class="hover:text-gray-400">Contact</a></li>
-                </ul>
-            </nav>
-
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+            <button class="lg:hidden text-gray-400 hover:text-white focus:outline-none">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -643,7 +651,7 @@
         </div>
     </footer>
     <!-- footer section end -->
-    
+
 
     <!-- main js -->
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
