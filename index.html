@@ -9,7 +9,7 @@
     <meta name="keyword" content="e-commerce, goods, pillow, jacket, towels">
     <meta name="author" content="Jennifer Adams" />
 
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon">
     <!-- google font and icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,11 +25,12 @@
 
 <body>
 
-    <header class="bg-primary py-4">
-        <div class="container">
+    <header class="bg-primary py-4 relative z-20">
+        <img src="./assets/images/pattern_bg_1.png" alt="shape" class="absolute left-0 top-0 bottom-0 object-cover xl:w-[40%] xxl:w-[35%] min-w-[260px] sm:min-w-[350px] bg-white -z-[1] -translate-x-40 h-full" style="    clip-path: polygon(0 0, calc(100% - 100px) 0%, 100% 100%, 0% 100%);">
+        <div class="container xxl:max-w-[1430px]">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
-                <div class="flex items-center">
+                <div class="flex items-center relative">
                     <img src="./assets/images/logo-black.svg" alt="Logo" class="max-w-[170px] select-none">
                 </div>
 
@@ -46,18 +47,19 @@
                     </ul>
                 </nav>
 
-                <div class="flex gap-3 items-center">
+                <div class="gap-3 items-center hidden xl:flex">
                     <button class="w-[45px] h-[45px] flex items-center justify-center text-xl text-white border border-white rounded-full hover:bg-white hover:text-primary transition duration-300 ease-linear"><i class="las la-search -scale-x-100"></i></button>
-                    <a href="" class="btn-primary">get a quote</a>
+                    <a href="" class="btn-primary white">get a quote <i class="las la-arrow-right ms-2"></i></a>
+                    <button class="w-[45px] h-[45px] flex items-center justify-center text-xl text-white border border-white rounded-full hover:bg-white hover:text-primary transition duration-300 ease-linear"><i class="las la-border-all"></i></button>
                 </div>
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-white hover:text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button class="lg:hidden text-gray-400 hover:text-white focus:outline-none">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
         </div>
     </header>
 
@@ -75,8 +77,8 @@
                         <h1 class="mb-6 text-white">PROVIDE EFFECTIVE BUILDING SOLUTIONS</h1>
                         <p class=" text-white">World class learning for anyone, anywhere for Increasing Knowledge. Let your creativity shine and start bighting your future today and impress your audiences.</p>
                         <div class="flex flex-wrap gap-7 mt-[40px]">
-                            <a href="" class="btn-primary">Our Services</a>
-                            <a href="" class="btn-primary">Our Services</a>
+                            <a href="" class="btn-primary">Our Services <i class="las la-arrow-right ms-2"></i></a>
+                            <a href="" class="btn-primary white--two">Our Services <i class="las la-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                     <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
@@ -237,6 +239,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-6">
+                    <a href="" class="btn-primary two">view all services</a>
+                </div>
             </div>
         </section>
         <!-- service section end -->
@@ -247,7 +252,7 @@
             <div class="container relative z-[2]">
                 <div class="flex flex-wrap items-center justify-between gap-5">
                     <h2 class="xxl:w-8/12 xl:w-8/12 lg:w-8/12 text-white">Have Any Question For Project Plan In Your Mind?</h2>
-                    <a href="" class="btn-primary">Get In Touch</a>
+                    <a href="" class="btn-primary white">Get In Touch <i class="las la-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </section>
@@ -569,7 +574,7 @@
                     <div class="flex-grow">
                         <form action="">
                             <div class="flex gap-2">
-                                <input type="text" class="bg-white rounded-md outline-none p-3 h-14 w-full" placeholder="Enter Email Address">
+                                <input type="text" class="bg-white rounded-md outline-none p-3 px-4 h-14 w-full" placeholder="Enter Email Address">
                                 <button class="btn-primary flex-shrink-0" type="submit">SUBSCRIBE <i class="las la-arrow-right"></i></button>
                             </div>
                         </form>
