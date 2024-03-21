@@ -47,7 +47,6 @@
       @apply border-b-0 pb-0;
     }
   }
-
   @media (min-width: 768px) and (max-width: 991px) {
     .service-grid-item:nth-of-type(2n + 1) {
       @apply border-r border-b border-border pb-6 pt-6;
@@ -84,6 +83,13 @@
     .service-grid-item:nth-last-child(3) {
       @apply border-b-0;
     }
+  }
+  .responsive-header.active {
+    @apply translate-x-0 opacity-100;
+    isolation: isolate
+  }
+  .overlay.active {
+    @apply opacity-100 visible;
   }
 }
 

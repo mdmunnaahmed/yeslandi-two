@@ -74,3 +74,15 @@ if (videoItem) {
     type: "iframe",
   });
 }
+
+// header toggle
+$('.header-toggle').on('click', function(e) {
+	$('.responsive-header').toggleClass('active')
+	$('header').toggleClass('active')
+	$('.overlay').toggleClass('active')
+})
+$('.overlay,.header-close').on('click', function(e) {
+	$('header').removeClass('active')
+	$('.responsive-header').removeClass('active')
+	$('.overlay').removeClass('active')
+})

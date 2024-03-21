@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <div class="overlay fixed left-0 top-0 bottom-0 right-0 bg-black/60 z-20 opacity-0 invisible transition-all duration-300 ease-linear"></div>
 
     <div class="py-3 bg-title border-b border-[#202c3c]">
         <div class="container xxl:max-w-[1430px]">
@@ -70,24 +71,28 @@
         </div>
     </div>
     <header class="bg-primary py-4 z-20 sticky top-0">
-        <img src="./assets/images/pattern_bg_1.png" alt="shape" class="absolute left-0 top-0 bottom-0 object-cover xl:w-[40%] xxl:w-[35%] min-w-[260px] sm:min-w-[350px] bg-white -z-[1] -translate-x-40 h-full" style="    clip-path: polygon(0 0, calc(100% - 100px) 0%, 100% 100%, 0% 100%);">
+        <img src="./assets/images/pattern_bg_1.png" alt="shape" class="absolute left-0 top-0 bottom-0 object-cover xl:w-[40%] xxl:w-[35%] min-w-[260px] sm:min-w-[350px] bg-white -z-[1] -translate-x-40 h-full" style="clip-path: polygon(0 0, calc(100% - 100px) 0%, 100% 100%, 0% 100%);">
         <div class="container xxl:max-w-[1430px]">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <div class="flex items-center relative">
-                    <img src="./assets/images/logo-black.svg" alt="Logo" class="max-w-[170px] select-none">
+                    <a href=""><img src="./assets/images/logo-black.svg" alt="Logo" class="max-w-[170px] select-none"></a>
                 </div>
 
                 <!-- Navigation -->
-                <nav class="hidden lg:block">
-                    <ul class="flex space-x-6 uppercase">
-                        <li><a href="#" class="text-white hover:text-white font-semibold">Home</a></li>
-                        <li><a href="#" class="text-white hover:text-white font-semibold">About</a></li>
-                        <li><a href="#" class="text-white hover:text-white font-semibold">Services</a></li>
-                        <li><a href="#" class="text-white hover:text-white font-semibold">Team</a></li>
-                        <li><a href="#" class="text-white hover:text-white font-semibold">Project</a></li>
-                        <li><a href="#" class="text-white hover:text-white font-semibold">Blog</a></li>
-                        <li><a href="#" class="text-white hover:text-white font-semibold">Contact</a></li>
+                <nav class="responsive-header fixed left-0 top-0 bg-white h-screen w-[300px] z-30 border-r-[3px] border-primary -translate-x-full opacity-0 transition-all duration-300 ease-linear lg:relative lg:h-auto lg:w-auto lg:left-auto lg:top-auto lg:translate-x-0 lg:opacity-100 lg:bg-transparent lg:visible">
+                    <button class="header-close w-8 h-8 flex items-center justify-center bg-primary text-white hover:text-white rounded-full absolute right-0 top-16 translate-x-1/2 lg:hidden"><i class="las la-times"></i></button>
+                    <div class="bg-[#F8F8F8] pt-10 pb-8 mx-auto text-center lg:hidden">
+                        <a href=""><img src="./assets/images/logo-black.svg" alt="Logo" class="max-w-[170px] mx-auto select-none lg:hidden"></a>
+                    </div>
+                    <ul class="flex lg:space-x-7 uppercase flex-col lg:flex-row p-8 overflow-y-auto lg:p-0">
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Home</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> About</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Services</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Team</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Project</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Blog</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Contact</a></li>
                     </ul>
                 </nav>
 
@@ -97,7 +102,7 @@
                     <button class="w-[45px] h-[45px] flex items-center justify-center text-xl text-white border border-white rounded-full hover:bg-white hover:text-primary transition duration-300 ease-linear"><i class="las la-border-all"></i></button>
                 </div>
                 <!-- Mobile Menu Button -->
-                <button class="lg:hidden text-white hover:text-white focus:outline-none">
+                <button class="lg:hidden text-white hover:text-white focus:outline-none header-toggle">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
