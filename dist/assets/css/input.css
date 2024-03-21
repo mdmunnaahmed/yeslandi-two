@@ -15,7 +15,7 @@
     @apply text-title font-semibold font-heading;
   }
   h1 {
-    @apply leading-[1.17] xl:text-4xl lg:text-3xl sm:text-[36px] text-[30px] font-bold;
+    @apply leading-tight sm:leading-[1.17] xl:text-4xl lg:text-3xl sm:text-[36px] text-[30px] font-bold;
   }
   h2 {
     @apply leading-[1.2] xl:text-3xl text-[28px] md:text-[36px] font-bold;
@@ -33,37 +33,76 @@
     @apply hover:text-primary transition duration-300 ease-linear;
   }
 
-  .service-grid-item:nth-of-type(3n + 1) {
-    @apply border-r border-b border-border pb-6 pt-6;
+  @media (max-width: 767px) {
+    .service-grid-item:nth-of-type(2n + 1) {
+      @apply border-l border-b border-border pb-8 pt-8 ps-8;
+    }
+    .service-grid-item:nth-of-type(2n + 2) {
+      @apply border-b border-r border-border ps-8 pb-8 pt-8;
+    }
+    .service-grid-item:nth-child(1) {
+      @apply pt-0;
+    }
+    .service-grid-item:nth-last-child(1) {
+      @apply border-b-0 pb-0;
+    }
   }
-  .service-grid-item:nth-of-type(3n + 2) {
-    @apply border-r border-b border-border ps-6 pb-6 pt-6;
+  @media (min-width: 768px) and (max-width: 991px) {
+    .service-grid-item:nth-of-type(2n + 1) {
+      @apply border-r border-b border-border pb-6 pt-6;
+    }
+    .service-grid-item:nth-of-type(2n + 2) {
+      @apply border-b border-border ps-6 pb-6 pt-6;
+    }
+    .service-grid-item:nth-child(1),
+    .service-grid-item:nth-child(2) {
+      @apply pt-0;
+    }
+    .service-grid-item:nth-last-child(1),
+    .service-grid-item:nth-last-child(2) {
+      @apply border-b-0 pb-0;
+    }
   }
-  .service-grid-item:nth-of-type(3n + 3) {
-    @apply border-b border-border ps-6 pb-6 pt-6;
+  @media (min-width:992px) {
+    .service-grid-item:nth-of-type(3n + 1) {
+      @apply border-r border-b border-border pb-6 pt-6;
+    }
+    .service-grid-item:nth-of-type(3n + 2) {
+      @apply border-r border-b border-border ps-6 pb-6 pt-6;
+    }
+    .service-grid-item:nth-of-type(3n + 3) {
+      @apply border-b border-border ps-6 pb-6 pt-6;
+    }
+    .service-grid-item:nth-child(1),
+    .service-grid-item:nth-child(2),
+    .service-grid-item:nth-child(3) {
+      @apply pt-0;
+    }
+    .service-grid-item:nth-last-child(1),
+    .service-grid-item:nth-last-child(2),
+    .service-grid-item:nth-last-child(3) {
+      @apply border-b-0;
+    }
   }
-  .service-grid-item:nth-child(1),
-  .service-grid-item:nth-child(2),
-  .service-grid-item:nth-child(3) {
-    @apply pt-0;
+  .responsive-header.active {
+    @apply translate-x-0 opacity-100;
+    isolation: isolate
   }
-  .service-grid-item:nth-last-child(1),
-  .service-grid-item:nth-last-child(2),
-  .service-grid-item:nth-last-child(3) {
-    @apply border-b-0;
+  .overlay.active {
+    @apply opacity-100 visible;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply relative z-[2] overflow-hidden inline-block border-none text-center font-body text-sm font-bold leading-none py-[20.5px] px-[29px] rounded-none text-white bg-primary uppercase transition duration-300 ease-linear;
+    @apply relative z-[2] overflow-hidden inline-block border-none text-center font-body text-sm font-bold leading-none py-[20.5px] px-[29px] rounded-none text-white bg-primary uppercase transition duration-500 ease-linear;
   }
   .btn-primary:hover {
     @apply text-title;
   }
   .btn-primary::before,
   .btn-primary::after {
-    @apply absolute h-full w-2/3 bg-black top-0 -z-10 content-[''] rounded-2xl transition duration-300 ease-linear;
+    @apply absolute h-full w-2/3 bg-black top-0 -z-10 content-[''] rounded-2xl transition duration-500 ease-linear;
   }
   .btn-primary.two {
     @apply hover:text-white
