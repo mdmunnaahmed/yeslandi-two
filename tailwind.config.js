@@ -21,7 +21,7 @@ module.exports = {
       sm: "0.875rem",
       base: "1rem",
       lg: "1.125rem",
-      "xl": "1.25rem",
+      xl: "1.25rem",
       "2xl": "1.5rem",
       "3xl": "3rem",
       "4xl": "4rem",
@@ -38,6 +38,22 @@ module.exports = {
         title: "#0E121D",
         body: "#4D5765",
       },
+      keyframes: {
+        footerLine: {
+          "0%": {
+            left: "40px",
+          },
+          "50%": {
+            left: "0",
+          },
+          "100%": {
+            left: "40px",
+          },
+        },
+      },
+      animation: {
+        footerLine: 'footerLine 7s linear infinite'
+      }
     },
   },
   plugins: [],
