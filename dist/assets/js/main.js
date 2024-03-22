@@ -1,5 +1,6 @@
 // Slider Part
 $(".team-slider").slick({
+	speed: 1000,
   fade: false,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -39,6 +40,7 @@ $(".team-slider").slick({
   ],
 });
 $(".project-slider").slick({
+	speed: 1000,
   fade: false,
   slidesToShow: 4,
   slidesToScroll: 1,
