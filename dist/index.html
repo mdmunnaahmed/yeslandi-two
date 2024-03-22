@@ -19,7 +19,7 @@
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Onepage Building Company</title>
 </head>
 
@@ -33,16 +33,16 @@
                 <div class=" hidden md:block">
                     <span class="text-white inline-flex items-center gap-1"><i class="las la-globe text-lg"></i> Language</span>
                     <select name="" id="" class="outline-none bg-transparent text-white">
-                        <option value="">AR</option>
-                        <option value="">JR</option>
-                        <option value="">EN</option>
-                        <option value="">BN</option>
+                        <option class="text-title" value="">AR</option>
+                        <option class="text-title" value="">JR</option>
+                        <option class="text-title" value="">EN</option>
+                        <option class="text-title" value="">BN</option>
                     </select>
                 </div>
             </div>
         </div>
     </div>
-    <div class="py-3 bg-title">
+    <div class="py-4 xl:py-5 bg-title">
         <div class="container xxl:max-w-[1430px]">
             <div class="flex flex-wrap items-center gap-2 sm:justify-between justify-center">
                 <ul class="flex-wrap gap-4 sm:gap-5 lg:gap-6 hidden sm:flex">
@@ -70,8 +70,9 @@
             </div>
         </div>
     </div>
-    <header class="bg-primary py-4 z-20 sticky top-0">
-        <img src="./assets/images/pattern_bg_1.png" alt="shape" class="absolute left-0 top-0 bottom-0 object-cover xl:w-[40%] xxl:w-[35%] min-w-[260px] sm:min-w-[350px] bg-white -z-[1] -translate-x-40 h-full" style="clip-path: polygon(0 0, calc(100% - 100px) 0%, 100% 100%, 0% 100%);">
+    <header class="bg-primary py-4 lg:py-0 z-20 sticky top-0">
+        <img src="./assets/images/pattern_bg_1.png" alt="shape" class="absolute left-0 top-0 bottom-0 object-cover xl:w-[40%] xxl:w-[35%] min-w-[260px] sm:min-w-[350px] bg-white -z-[1] -translate-x-40 h-full"
+            style="clip-path: polygon(0 0, calc(100% - 100px) 0%, 100% 100%, 0% 100%);">
         <div class="container xxl:max-w-[1430px]">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
@@ -80,26 +81,73 @@
                 </div>
 
                 <!-- Navigation -->
-                <nav class="responsive-header fixed left-0 top-0 bg-white h-screen w-[300px] z-30 border-r-[3px] border-primary -translate-x-full opacity-0 transition-all duration-300 ease-linear lg:relative lg:h-auto lg:w-auto lg:left-auto lg:top-auto lg:translate-x-0 lg:opacity-100 lg:bg-transparent lg:visible">
+                <nav
+                    class="responsive-header fixed left-0 top-0 bg-white h-screen w-[300px] z-30 border-r-[3px] border-primary -translate-x-full opacity-0 transition-all duration-300 ease-linear lg:relative lg:h-auto lg:w-auto lg:left-auto lg:top-auto lg:translate-x-0 lg:opacity-100 lg:bg-transparent lg:visible">
                     <button class="header-close w-8 h-8 flex items-center justify-center bg-primary text-white hover:text-white rounded-full absolute right-0 top-16 translate-x-1/2 lg:hidden"><i class="las la-times"></i></button>
                     <div class="bg-[#F8F8F8] pt-10 pb-8 mx-auto text-center lg:hidden">
                         <a href=""><img src="./assets/images/logo-black.svg" alt="Logo" class="max-w-[170px] mx-auto select-none lg:hidden"></a>
                     </div>
-                    <ul class="flex lg:space-x-7 uppercase flex-col lg:flex-row p-8 overflow-y-auto lg:p-0">
-                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Home</a></li>
-                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> About</a></li>
-                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Services</a></li>
-                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Team</a></li>
-                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Project</a></li>
-                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Blog</a></li>
-                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block lg:inline-block"><i class="las la-angle-right me-1 lg:hidden"></i> Contact</a></li>
+                    <ul class="flex lg:space-x-7 uppercase flex-col lg:flex-row p-8 overflow-y-auto lg:p-0 lg:overflow-visible">
+                        <li class="relative">
+                            <a href="#0"
+                                class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-flex lg:items-center lg:gap-[6px] lg:py-9">
+                                <i class="las la-angle-right me-1 lg:hidden transition-all duration-300 ease-linear"></i> Home
+                                <button class="bg-[#F8F8F8] rounded-full flex items-center justify-center w-7 h-7 text-title text-sm absolute right-0 top-[6px]  lg:w-auto lg:h-auto lg:bg-transparent lg:static lg:text-white lg:text-base"><i
+                                        class="las la-plus"></i></button></a>
+                            <ul
+                                class="capitalize lg:py-5 lg:px-6 bg-white lg:font-semibold lg:absolute lg:-left-7 lg:top-full lg:min-w-[180px] lg:scale-y-50 lg:origin-top lg:opacity-0 lg:invisible group-hover:opacity-100 group-hover:visible group-hover:scale-100 lg:transition-all lg:duration-300 lg:ease-linear hidden lg:block lg:border border-border">
+                                <li class="relative">
+                                    <a class="text-title py-2 lg:py-0 ps-[18px] lg:ps-0 block border-b border-[#fdedf1] lg:border-0" href="#0">
+                                        <i class="las la-tools me-1 hidden lg:inline-block text-primary"></i>
+                                        <i class="las la-angle-right me-1 lg:hidden"></i> Multipage
+                                        <button class="bg-[#F8F8F8] rounded-full flex items-center justify-center w-7 h-7 text-title text-sm absolute right-0 top-[6px]  lg:w-auto lg:h-auto lg:bg-transparent lg:static lg:text-white lg:text-base lg:hidden"><i
+                                            class="las la-plus"></i></button>
+                                    </a>
+                                    <ul
+                                        class="capitalize lg:py-5 lg:px-6 bg-white lg:font-semibold lg:absolute lg:left-full lg:top-0 lg:min-w-[250px] lg:scale-y-50 lg:origin-top lg:opacity-0 lg:invisible group-hover:opacity-100 translate-x-6 group-hover:visible group-hover:scale-100 lg:transition-all lg:duration-300 lg:ease-linear hidden lg:block lg:border border-border">
+                                        <li>
+                                            <a class="text-title py-2 lg:py-0 ps-[18px] lg:ps-0 block border-b border-[#fdedf1] lg:border-0" href="">
+                                                <i class="las la-tools me-1 hidden lg:inline-block text-primary"></i>
+                                                <i class="las la-angle-right me-1 lg:hidden"></i> Home Construction
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-title py-2 lg:py-0 ps-[18px] lg:ps-0 block border-b border-[#fdedf1] lg:border-0" href="">
+                                                <i class="las la-tools me-1 hidden lg:inline-block text-primary"></i>
+                                                <i class="las la-angle-right me-1 lg:hidden"></i> Home Real Estate
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="text-title py-2 lg:py-0 ps-[18px] lg:ps-0 block border-b border-[#fdedf1] lg:border-0" href="">
+                                        <i class="las la-tools me-1 hidden lg:inline-block text-primary"></i>
+                                        <i class="las la-angle-right me-1 lg:hidden"></i> Onepage
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block lg:py-9"><i
+                                    class="las la-angle-right me-1 lg:hidden"></i> About</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block lg:py-9"><i
+                                    class="las la-angle-right me-1 lg:hidden"></i> Services</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block lg:py-9"><i
+                                    class="las la-angle-right me-1 lg:hidden"></i> Team</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block lg:py-9"><i
+                                    class="las la-angle-right me-1 lg:hidden"></i> Project</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block border-b border-[#fdedf1] lg:border-0 lg:inline-block lg:py-9"><i
+                                    class="las la-angle-right me-1 lg:hidden"></i> Blog</a></li>
+                        <li><a href="#" class="lg:text-white lg:hover:text-white lg:font-semibold text-title hover:text-primary lg:uppercase capitalize py-2 block lg:inline-block lg:py-9"><i class="las la-angle-right me-1 lg:hidden"></i> Contact</a>
+                        </li>
                     </ul>
                 </nav>
 
                 <div class="gap-3 items-center hidden xl:flex">
-                    <button class="w-[45px] h-[45px] flex items-center justify-center text-xl text-white border border-white rounded-full hover:bg-white hover:text-primary transition duration-300 ease-linear"><i class="las la-search -scale-x-100"></i></button>
+                    <button class="w-[45px] h-[45px] flex items-center justify-center text-xl text-white border border-white rounded-full hover:bg-white hover:text-primary transition duration-300 ease-linear"><i
+                            class="las la-search -scale-x-100"></i></button>
                     <a href="" class="btn-primary white">get a quote <i class="las la-arrow-right ms-2"></i></a>
-                    <button class="w-[45px] h-[45px] flex items-center justify-center text-xl text-white border border-white rounded-full hover:bg-white hover:text-primary transition duration-300 ease-linear"><i class="las la-border-all"></i></button>
+                    <button class="w-[45px] h-[45px] flex items-center justify-center text-xl text-white border border-white rounded-full hover:bg-white hover:text-primary transition duration-300 ease-linear"><i
+                            class="las la-border-all"></i></button>
                 </div>
                 <!-- Mobile Menu Button -->
                 <button class="lg:hidden text-white hover:text-white focus:outline-none header-toggle">
@@ -125,7 +173,7 @@
                         <p class="text-lg text-primary font-semibold mb-6"># Welcome to Driller</p>
                         <h1 class="mb-6 text-white">PROVIDE EFFECTIVE BUILDING SOLUTIONS</h1>
                         <p class=" text-white">World class learning for anyone, anywhere for Increasing Knowledge. Let your creativity shine and start bighting your future today and impress your audiences.</p>
-                        <div class="flex flex-wrap gap-x-7 gap-y-5 mt-[40px] sm:justify-center md:justify-start">
+                        <div class="flex flex-wrap gap-x-7 gap-y-5 mt-[40px] justify-center md:justify-start">
                             <a href="" class="btn-primary">Our Services <i class="las la-arrow-right ms-2"></i></a>
                             <a href="" class="btn-primary white--two">Get a quote <i class="las la-arrow-right ms-2"></i></a>
                         </div>

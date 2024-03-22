@@ -63,7 +63,7 @@
       @apply border-b-0 pb-0;
     }
   }
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     .service-grid-item:nth-of-type(3n + 1) {
       @apply border-r border-b border-border pb-6 pt-6;
     }
@@ -90,6 +90,15 @@
   .overlay.active {
     @apply opacity-100 visible;
   }
+  ul > li a:hover ~ ul {
+    @apply visible opacity-100 scale-100;
+  }
+  ul:hover {
+    @apply visible opacity-100 scale-100;
+  }
+  ul li ul {
+    @apply translate-x-6
+  }
 }
 
 @layer components {
@@ -104,14 +113,14 @@
     @apply absolute h-full w-2/3 bg-black top-0 -z-10 content-[''] rounded-2xl transition duration-500 ease-linear;
   }
   .btn-primary.two {
-    @apply hover:text-white
+    @apply hover:text-white;
   }
   .btn-primary.two:hover::before,
   .btn-primary.two:hover::after {
     @apply hover:bg-title;
   }
   .btn-primary::before {
-    @apply -translate-x-full -left-1 ;
+    @apply -translate-x-full -left-1;
   }
   .btn-primary::after {
     @apply translate-x-full -right-1;
@@ -123,16 +132,18 @@
     @apply translate-x-1 rounded-none bg-white;
   }
   .btn-primary.white {
-    @apply bg-white text-primary hover:text-white
+    @apply bg-white text-primary hover:text-white;
   }
   .btn-primary.white--two {
-    @apply bg-white text-primary hover:text-white hover:bg-primary
+    @apply bg-white text-primary hover:text-white hover:bg-primary;
   }
-  .btn-primary.white::after, .btn-primary.white::before {
-    @apply bg-title
+  .btn-primary.white::after,
+  .btn-primary.white::before {
+    @apply bg-title;
   }
-  .btn-primary.white--two::after, .btn-primary.white--two::before {
-    @apply bg-title hover:bg-primary
+  .btn-primary.white--two::after,
+  .btn-primary.white--two::before {
+    @apply bg-title hover:bg-primary;
   }
 
   .social-links li a:hover img {
