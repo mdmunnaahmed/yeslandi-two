@@ -336,11 +336,19 @@
   right: 35px;
   left: auto;
 }
-@media (max-width:575px) {
+@media (max-width:991px) {
+  .project-slider .slick-list {
+    margin-right: 0;
+  }
   .project-slider .slick-arrow {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     font-size: 18px;
+    top: -60px;
+    left: auto;
+    right: auto;
+    margin: auto;
+    left: 49%;
   }
 }
 .project-slider .slick-arrow.arrow-left {

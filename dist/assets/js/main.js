@@ -58,9 +58,15 @@ $(".project-slider").slick({
       },
     },
     {
-      breakpoint: 575,
+      breakpoint: 991,
       settings: {
         slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
       },
     },
   ],

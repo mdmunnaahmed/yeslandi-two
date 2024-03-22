@@ -1164,6 +1164,14 @@ ul li ul {
   margin-top: 40px;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -2350,6 +2358,10 @@ ul li ul {
     margin-top: 1.5rem;
   }
 
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2537,6 +2549,18 @@ ul li ul {
     padding-top: 120px;
   }
 
+  .lg\:pb-\[90px\] {
+    padding-bottom: 90px;
+  }
+
+  .lg\:pt-\[90px\] {
+    padding-top: 90px;
+  }
+
+  .lg\:text-start {
+    text-align: start;
+  }
+
   .lg\:text-\[30px\] {
     font-size: 30px;
   }
@@ -2605,6 +2629,10 @@ ul li ul {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 
   .xl\:flex-nowrap {
